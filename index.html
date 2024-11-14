@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c3f23d02ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id ="preloader"></div>
+
+    <div id="header">
+        <div class ="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-duotone fa-solid fa-xmark" onclick ="closemenu()"></i>
+                </ul>
+                <i class="fa-duotone fa-solid fa-bars" onclick ="openmenu()"></i>
+            </nav>
+            <div class ="header-txt">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Sachith</span><br>Liyanage From<br>Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class ="sub-title">About Me</h1>
+                    <p>I'm Sachith, a BSc. Hons. Software Engineering undergraduate with a passion for building efficient, scalable software solutions. My studies and hands-on projects have equipped me with a strong foundation in programming, problem-solving, and software development. I'm enthusiastic about exploring new technologies and am eager to apply my skills to real-world challenges. Let's connect!</p>
+                
+                    <div class="tab-titles">
+                        <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class ="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class ="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id ="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id ="experience">
+                        <ul>
+                            <li><span>2024-Present</span><br>An undergraduate student at the Sri Lanka Institute of Technology</li>
+                            <li><span>2022-2023</span><br>Supported end-users at Sachi Rent a Car and Tours with technical troubleshooting, documentation, and system upgrades.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Passed Advanced Level Examination</span><br>B - 1<br> C - 2 </li>
+                            <li><span>Passed Ordinary Level Examination</span><br>A - 2<br> B - 5 <br> C - 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-duotone fa-solid fa-code" style="--fa-primary-color: #be2828; --fa-secondary-color: #be2828;"></i>
+                    <h2>Web Design</h2>
+                    <p> create visually appealing, user-friendly websites tailored to your brand. From layout to functionality, I focus on responsive, modern designs that provide a seamless experience across all devices. Let's build a website that not only looks great but drives results for your business.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-duotone fa-solid fa-crop" style="--fa-primary-color: #be2828; --fa-secondary-color: #be2828;"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> I design intuitive, engaging user interfaces that enhance the overall experience. My approach combines aesthetics with functionality to create layouts that are easy to navigate and visually compelling. I prioritize user-centered design principles to ensure your product not only meets but exceeds user expectations, delivering both satisfaction and usability.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-duotone fa-solid fa-mobile-button" style="--fa-primary-color: #be2828; --fa-secondary-color: #be2828;"></i>
+                    <h2>App Design</h2>
+                    <p> I craft sleek, intuitive app designs that prioritize user engagement and ease of use. From initial wireframes to polished interfaces, I focus on creating a seamless user journey that aligns with your brand and meets the needs of your audience. Whether it’s iOS, Android, or cross-platform, my designs are optimized for a consistent, high-quality experience across all devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------portfolio----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/app dev.jpg">
+                    <div class="layer">
+                        <h3>Enjoy - Music App</h3>
+                        <p>Enjoy is a music app that lets users explore, create playlists, and get personalized recommendations. With a sleek design and features like offline listening, Enjoy makes music discovery seamless and enjoyable.</p>
+                        <a href="#"><i class="fa-duotone fa-solid fa-up-right-from-square" style="--fa-primary-color: #be2828; --fa-secondary-color: #be2828;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/web work.jpg">
+                    <div class="layer">
+                        <h3>Sell It -Web Page</h3>
+                        <p>Created a responsive, user-friendly site for online sales, with secure checkout, easy browsing, and real-time inventory updates for a seamless shopping experience.</p>
+                        <a href="#"><i class="fa-duotone fa-solid fa-up-right-from-square" style="--fa-primary-color: #be2828; --fa-secondary-color: #be2828;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Currently developing a social media app focused on connectivity and engagement, with features for real-time interactions, user profiles, and intuitive navigation for a seamless social experience.</p>
+                        <a href="#"><i class="fa-duotone fa-solid fa-up-right-from-square" style="--fa-primary-color: #be2828; --fa-secondary-color: #be2828;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------------------Contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-duotone fa-solid fa-paper-plane"></i>sdmax59@gmail.com</p>
+                    <p><i class="fa-duotone fa-solid fa-phone"></i>078-4928467</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Sachith. Made with <i class="fa-duotone fa-solid fa-heart"></i> by My Self</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0"
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwWE-NYSPwIOVVaJEjN6XOcSsf-OOnmmnmbWWQmyAR3LM-XTFoudAnnau4PeGGGSmRb/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <script>
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+
+      </script>
+
+</body>
+</html>
